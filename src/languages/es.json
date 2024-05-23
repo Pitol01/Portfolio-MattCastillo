@@ -1,0 +1,34 @@
+{
+    "profile": {
+        "rol": "Desarrollador de Software",
+        "description": "Hola me llamo Matt soy un Desarrollador de Software Junior, mi proposito es aplicar mi conocimiento a la empresa con la que vaya a trabajar",
+        "cv": "Descargar CV"
+    },
+
+    "experience": {
+        "tittle-card": "Experiencia Laboral",
+        "first-job-tittle": "Veterinaria Mascotitas",
+        "first-job-dates": "Agosto 2024 - Actual",
+        "first-job-description": "Colabore en esta empresa como ayudante y cree su pagina web."
+    },
+
+    "hobbies": {
+        "hobbies-tittle": "Natacion",
+        "hobbies-description": "Me gusta nadar en la piscina y en aguas abiertas."
+    },
+
+    "skills": {
+        "skills-language-frontend": "Lenguajes Front-End",
+        "skills-language-backend": "Lenguajes Back-End",
+        "skills-resources": "Recursos",
+
+        "tittle-years-experience": "Años de experiencia"
+    },
+
+    "projects":{
+        "first-project-tittle": "Pagina 1",
+        "first-project-description": "mi primera pagina mi primera pagina mi primera pagina mi primera pagina",
+
+        "code-button": "Codigo"
+    }
+}

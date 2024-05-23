@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Matt Castillo - Portfolio</title>
+  </head>
+  <body class="dark">
+    <!-- CABECERA -->
+    <header class="header">
+      <!-- Poner en modo oscuro o claro la pagina -->
+      <div class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img 
+            id="toggle-icon" 
+            src="assets/icons/moon.svg" 
+            alt="icon theme" 
+            class="toggle-theme__icon"
+          />
+          <p id="toggle-text" class="toogle-theme__text">Dark Mode</p>
+        </div>
+      </div> <!-- Fin poner en modo oscuro o claro la pagina -->
+      
+      <!-- Cambio de Idioma de la Pagina -->
+      <div id="flags" class="flags">
+        <div class="flags__item" data-language="es">
+          <img class="flags__img" src="assets/icons/es.svg" alt="Español">
+        </div>
+        <div class="flags__item" data-language="us">
+          <img class="flags__img" src="assets/icons/us.svg" alt="Ingles">
+        </div>
+      </div> <!-- Fin cambio de Idioma de la Pagina -->
+
+      <!-- Cambia los colores de algunas ubicaciones interactivas -->
+      <div id="toggle-colors" class="colors">
+        <div data-color="hsl(214, 84%, 56%)" class="colors__item 
+        colors__item--blue"></div>
+
+        <div data-color="hsl(150, 84%, 56%)" class="colors__item 
+        colors__item--green"></div>
+
+        <div data-color="hsl(276, 84%, 56%)"class="colors__item 
+        colors__item--purple"></div>
+
+        <div data-color="hsl(46, 84%, 56%)"class="colors__item 
+        colors__item--orange"></div>
+      </div> <!-- Fin cambia los colores de algunas ubicaciones interactivas -->
+    </header> <!-- END CABECERA -->
+
+    <!-- CONTENIDO -->
+    <main class="main">
+      <!-- COLUMNA LADO IZQUIERDO -->
+      <section class="column column--left">
+        <!-- PROFILE CARD -->
+        <article class="card card--profile">
+          <!-- Foto de Perfil -->
+          <div class="card__image-container">
+            <img src="assets/images/perfil.png" alt="Foto de Perfil">
+          </div>
+          <!-- Nombre y Carrera -->
+          <div class="card__header">
+            <h2 class="card__tittle no-margin">Matt Castillo</h2>
+            <p class="card__subtitle" data-section="profile" data-value="rol">Desarrollador de Software</p>
+          </div>
+          <!-- Enlace a correo y numero de telefono de contacto -->
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:mattecastilloch@outlook.com">
+                mattecastilloch@outlook.com
+              </a>
+            </div>
+            <div class="card__link">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:923877091">
+                (+51) 923877091
+              </a>
+            </div>
+            <!-- Pequeña Descripcion de mi -->
+            <p class="card__text" data-section="profile" data-value="description">
+              Hola me llamo Matt soy un Desarrollador de Software Junior, mi proposito es aplicar mi conocimiento a la empresa con la que vaya a trabajar
+            </p>
+          </div>
+          <div class="button button--primary">
+            <a href="assets/cv/CV.pdf" class="button button--primary" target="_blank" data-section="profile" data-value="cv">
+              Descargar CV
+            </a> 
+            <i class="fa-solid fa-download"></i>
+          </div>
+        </article> <!-- END PROFILE CARD -->
+
+        <!-- EXPERIENCE CARD -->
+        <article class="card card--experience">
+          <h2 class="card__tittle" data-section="experience" data-value="tittle-card">Experiencia Laboral</h2>
+          <div class="experience">
+            <img src="assets/images/VetMascotitas.png" alt="Logo de Veterinaria Mascotitas" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time" data-section="experience" data-value="first-job-dates">
+                Agosto 2024 - Actual
+              </p>
+              <h3 class="experience__job" data-section="experience" data-value="first-job-tittle">Veterinaria Mascotitas</h3>
+              <p class="experience__description" data-section="experience" data-value="first-job-description">
+                Colabore en esta empresa como ayudante y cree su pagina web.
+              </p>
+            </div>
+          </div>
+        </article> <!-- END EXPERIENCE CARD -->
+
+        <!-- HOOBIES CARD -->
+        <article class="card card--hobbies">
+          <h2 class="class">Hobbies</h2>
+          <div class="card__image-container">
+            <img src="assets/images/hobbie.jpg" alt="Man on a bike">
+          </div>
+          <h3 class="hobbie__title" data-section="hobbies" data-value="hobbies-tittle">Natacion</h3>
+          <p class="card__text"  data-section="hobbies" data-value="hobbies-description">Me gusta nadar en la piscina y en aguas abiertas.</p>
+        </article> <!-- END HOOBIES CARD -->
+      </section> <!-- END COLUMNA LADO IZQUIERDO -->
+
+      <!-- COLUMNA LADO DERECHO -->
+      <section class="column column--right">
+        <!-- Column1 -->
+        <section class="column">
+          <!-- Lenguajes de programacion Front-End -->
+          <article class="card">
+          <h2 class="card__tittle" data-section="skills" data-value="skills-language-frontend">Lenguajes Front-End</h2>
+          <small data-section="skills" data-value="tittle-years-experience">Años de experiencia</small>
+          <div class="skills"></div>
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">3</span>
+          </div> 
+          <div class="skills">
+            <!-- HTML -->
+            <div class="skills__item">
+              <img src="assets/icons/html5.svg" alt="html5" class="skills__icon">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <!-- CSS -->
+            <div class="skills__item">
+              <img src="assets/icons/css3.svg" alt="css3" class="skills__icon">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+            <!-- JavaScript -->
+            <div class="skills__item">
+              <img src="assets/icons/js.svg" alt="j" class="skills__icon">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            <!-- Kotlin -->
+            <div class="skills__item">
+              <img src="assets/icons/kotlin.svg" alt="kotlin" class="skills__icon">
+              <p class="skills__tech">Kotlin</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+          </div>
+          </article> <!-- Fin lenguajes de programacion Front-End -->
+
+          <!-- Sistemas Operativos -->
+          <article class="card">
+          <!-- Ubuntu -->
+          <h2 class="card__tittle">S.O</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <img src="assets/icons/ubuntu.svg" alt="notion" class="skills__icon">
+              <p class="skills__tech">Ubuntu</p>
+              <div class="skills__bar skills__bar--30"></div>
+            </div>
+            <!-- Kali -->
+            <div class="skills__item">
+              <img src="assets/icons/kali.svg" alt="notion" class="skills__icon">
+              <p class="skills__tech">Kali</p>
+              <div class="skills__bar skills__bar--40"></div>
+            </div>
+          </div>
+          </article> <!-- Fin sistemas Operativos -->
+        </section> <!-- Fin Column1 -->
+
+        <!-- Column2 -->
+        <Section class="column">
+          <!-- Lenguajes de programacion Back-End -->
+          <article class="card">
+          <h2 class="card__tittle" data-section="skills" data-value="skills-language-backend">Lenguajes Back-End</h2>
+          <small data-section="skills" data-value="tittle-years-experience">Años de experiencia</small>
+          <div class="skills"></div>
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">3</span>
+          </div> 
+          <div class="skills">
+            <!-- SQL -->
+            <div class="skills__item">
+              <img src="assets/icons/sql.svg" alt="kotlin" class="skills__icon">
+              <p class="skills__tech">SQL</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <!-- MySQL -->
+            <div class="skills__item">
+              <img src="assets/icons/mysql.svg" alt="kotlin" class="skills__icon">
+              <p class="skills__tech">MySQL</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>            
+            <!-- C# -->
+            <div class="skills__item">
+              <img src="assets/icons/csharp.svg" alt="kotlin" class="skills__icon">
+              <p class="skills__tech">C#</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+          </div>
+          </article> <!-- Fin lenguajes de programacion Back-End -->
+
+          <!-- Editores de Video -->
+          <article class="card">
+          <h2 class="card__tittle">Multimedia</h2>
+          <!-- Davinci Resolve -->
+          <div class="skills">
+            <div class="skills__item">
+              <img src="assets/icons/davinci.svg" alt="kotlin" class="skills__icon">
+              <p class="skills__tech">Davinci Resolve</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            <!-- Filmora -->
+            <div class="skills__item">
+              <img src="assets/icons/filmora.svg" alt="kotlin" class="skills__icon">
+              <p class="skills__tech">Filmora</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+          </div>
+          </article> <!-- Fin editores de video -->
+        </Section> <!-- Fin Column2 -->
+
+        <!-- Column3 -->
+        <section class="column">
+          <!-- Recursos -->
+          <article class="card">
+          <h2 class="card__tittle" data-section="skills" data-value="skills-resources">Recursos</h2>
+          <small data-section="skills" data-value="tittle-years-experience">Años de experiencia</small>
+          <div class="skills"></div>
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">3</span>
+          </div> 
+          <div class="skills">
+            <!-- Visual Studio -->
+            <div class="skills__item">
+              <img src="assets/icons/vs.svg" alt="vs" class="skills__icon">
+              <p class="skills__tech">Visual Studio</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <!-- Visual Studio Code -->
+            <div class="skills__item">
+              <img src="assets/icons/vsc.svg" alt="vsc" class="skills__icon">
+              <p class="skills__tech">Visual Studio Code</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>            
+            <!-- XAMPP -->
+            <div class="skills__item">
+              <img src="assets/icons/xampp.svg" alt="xampp" class="skills__icon">
+              <p class="skills__tech">XAMPP</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            <!-- Microsoft SQL Server -->
+            <div class="skills__item">
+              <img src="assets/icons/microsoftsql.svg" alt="mssql" class="skills__icon">
+              <p class="skills__tech">Microsoft SQL Server</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            <!-- TeamViewer -->
+            <div class="skills__item">
+              <img src="assets/icons/teamviewer.svg" alt="mssql" class="skills__icon">
+              <p class="skills__tech">TeamViewer</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            <!-- Notion -->
+            <div class="skills__item">
+              <img src="assets/icons/notion.svg" alt="notion" class="skills__icon">
+              <p class="skills__tech">Notion</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+          </div>
+          </article> <!-- Fin Recursos -->
+        </section> <!-- Fin Column3 -->
+
+        <!-- Demo proyectos -->
+        <!-- Proyecto1 -->
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag">#HTML</span>
+              <span class="project__tag">#CSS</span>
+              <span class="project__tag">#JavaScript</span>
+              <span class="project__tag">#Responsive</span>
+            </div>
+            <h2 class="card__tittle" data-section="projects" data-value="first-project-tittle">Pagina 1</h2>
+            <p class="card__text" data-section="projects" data-value="first-project-description">mi primera pagina mi primera pagina mi primera pagina mi primera pagina</p>
+            <p class="card__text" data-section="projects" data-value="first-project-description">mi primera pagina mi primera pagina mi primera pagina mi primera pagina</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost" data-section="projects" data-value="code-button">Codigo</a>
+            </div>
+        </article> <!-- Fin Proyecto1 -->
+        <!-- Fin demo proyectos -->
+      </section> <!-- END COLUMNA LADO DERECHO -->
+
+    </main> <!-- END CONTENIDO -->
+
+    <!-- Reproductor de audio -->
+    <div class="audio-player">
+      <audio id="background-audio" controls autoplay>
+        <source src="assets/audio/Balamb Garden.mp3" type="audio/mpeg">
+        <source src="assets/audio/Calamity.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

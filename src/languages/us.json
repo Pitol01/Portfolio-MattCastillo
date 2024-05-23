@@ -1,0 +1,34 @@
+{
+     "profile": {
+         "rol": "Software Developer",
+         "description": "Hello, my name is Matt, I am a Junior Software Developer, my purpose is to apply my knowledge to the company I am going to work with",
+         "cv": "Download CV"
+     },
+
+     "experience": {
+        "tittle-card": "Work Experience",
+        "first-job-tittle": "Veterinaria Mascotitas",
+        "first-job-dates": "August 2024 - Current",
+        "first-job-description": "Collaborate in this company as an assistant and create your website."
+     },
+
+     "hobbies": {
+        "hobbies-tittle": "Swimming",
+        "hobbies-description": "I like swimming in the pool and in open water."
+    },
+
+    "skills": {
+        "skills-language-frontend": "Front-End languages",
+        "skills-language-backend": "Back-End languages",
+        "skills-resources": "Resources",
+
+        "tittle-years-experience": "Years of experience"
+    },
+
+     "projects":{
+         "first-project-tittle": "Page 1",
+         "first-project-description": "my first page my first page my first page my first page",
+
+         "code-button": "Code"
+     }
+}
